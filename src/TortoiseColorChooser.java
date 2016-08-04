@@ -12,13 +12,13 @@ public class TortoiseColorChooser {
 	public static void main(String[] args) {
 		String color;
 		
-		// 2. set the pen width to 10
+		// 2. Set the pen width to 10
 		Tortoise.setPenWidth(10);
 		Tortoise.penDown();
 		Tortoise.setSpeed(10);
 		int numLoops = new Random().nextInt(10);
 
-		System.out.println(numLoops);
+		//System.out.println(numLoops);
 		
 		for (int i = 0; i < numLoops + 1; i++) {
 			
