@@ -11,6 +11,7 @@ public class TortoiseColorChooser {
 
 	public static void main(String[] args) {
 		String color;
+		double negPi = -3.14;
 		
 		// 2. Set the pen width to 10
 		Tortoise.setPenWidth(10);
@@ -18,29 +19,14 @@ public class TortoiseColorChooser {
 		Tortoise.setSpeed(10);
 		int numLoops = new Random().nextInt(10);
 
-		//System.out.println(numLoops);
+		System.out.println(numLoops + " " + negPi);
 		
 		for (int i = 0; i < numLoops + 1; i++) {
 			
 			// 3. ask the user what color they would like the tortoise to draw
 			color = JOptionPane.showInputDialog("Select your color:");
 
-			// 4. use an if/else statement to set the pen color that the user
-			// requested
-			if (color.equals("red"))
-				Tortoise.setPenColor (PenColors.Reds.IndianRed);
-			else if (color.equals("blue"))
-				Tortoise.setPenColor (PenColors.Blues.Azure);
-			else if (color.equals("yellow"))
-				Tortoise.setPenColor (PenColors.Yellows.Gold);
-			else if (color.equals("green"))
-				Tortoise.setPenColor (PenColors.Greens.DarkCyan);
-			else if (color.equals(""))
-				Tortoise.setPenColor (PenColors.getRandomColor());
-			else
-				Tortoise.setPenColor (PenColors.Grays.Black);
-
-			// 5. if the user doesn’t enter anything, choose a random color
+			changeColor(color);
 
 			// 6. put a loop around your code so that you keep asking the user
 			// for more colors & drawing them
@@ -52,5 +38,23 @@ public class TortoiseColorChooser {
 				Tortoise.move(200);
 			}
 		}
+	}
+
+	private static void changeColor(String color) {
+		// 4. use an if/else statement to set the pen color that the user
+		// requested
+		// 5. if the user doesn’t enter anything, choose a random color
+		if (color.equals("red"))
+			Tortoise.setPenColor (PenColors.Reds.IndianRed);
+		else if (color.equals("blue"))
+			Tortoise.setPenColor (PenColors.Blues.Blue);
+		else if (color.equals("yellow"))
+			Tortoise.setPenColor (PenColors.Yellows.Gold);
+		else if (color.equals("green"))
+			Tortoise.setPenColor (PenColors.Greens.DarkGreen);
+		else if (color.equals(""))
+			Tortoise.setPenColor (PenColors.getRandomColor());
+		else
+			Tortoise.setPenColor (PenColors.Grays.Black);
 	}
 }
