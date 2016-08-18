@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="C:/Users/Wendy/Documents/GitHub/WorkshopLevel0/IntroToJavaWorkshop/league-jars/robot.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Wendy/Documents/GitHub/WorkshopLevel0/IntroToJavaWorkshop/league-jars/RobotMaker.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Wendy/Documents/GitHub/WorkshopLevel0/IntroToJavaWorkshop/league-jars/Tortoise.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Wendy/Documents/GitHub/WorkshopLevel0/IntroToJavaWorkshop/league-jars/TeachingKidsProgramming - unicorn.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
