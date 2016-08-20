@@ -30,7 +30,7 @@ public class ChangeCalculator {
 
 		double money = (numNickels * 0.05) + (numDimes * 0.10) + (numQuarters * 0.25);
 
-		JOptionPane.showMessageDialog(null, "You have $" + String.format("%.2f", money) + " in cash!");
+		JOptionPane.showMessageDialog(null, String.format("You have $%.2f cash in your pocket!", money));
 	}
 
 }
