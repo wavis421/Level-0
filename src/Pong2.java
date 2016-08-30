@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class Pong extends JPanel {
+public class Pong2 extends JPanel {
 	private static final int BOX_WIDTH = 640;
 	private static final int BOX_HEIGHT = 480;
 	
@@ -11,9 +11,9 @@ public class Pong extends JPanel {
 	private int speedX = 8;
 	private int speedY = 8;
 
-	public Pong() {
+	public Pong2() {
 		this.setPreferredSize(new Dimension(BOX_WIDTH, BOX_HEIGHT));
-		System.out.println("Pong constructor");
+		System.out.println("Pong2 enter constructor");
 		// Start the ball bouncing (in its own thread)
 		Thread gameThread = new Thread() {
 			public void run() {
@@ -26,7 +26,9 @@ public class Pong extends JPanel {
 				}
 			}
 		};
+		System.out.println("Pong2 constructor, ready to start");
 		gameThread.start();
+		System.out.println("Pong2 constructor, started thread");
 	}
 
 	/** Custom rendering codes for drawing the JPanel */
@@ -60,10 +62,11 @@ public class Pong extends JPanel {
 			public void run() {
 				System.out.println("Entering run in main");
 				// Set up main window (using Swing's Jframe)
-				JFrame frame = new JFrame("Pong Game");
+				JFrame frame = new JFrame("Pong2 Game");
 				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 				frame.setSize(BOX_WIDTH,  BOX_HEIGHT);
-				frame.setContentPane(new Pong());
+				frame.setContentPane(new Pong2());
+				System.out.println("Done new Pong2 in main");
 				frame.pack();
 				frame.setVisible(true);
 			}
