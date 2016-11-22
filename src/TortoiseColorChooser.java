@@ -1,9 +1,8 @@
 
-import javax.swing.JOptionPane;
-import java.awt.Color;
 import java.util.Random;
 
-import org.teachingextensions.logo.Colors;
+import javax.swing.JOptionPane;
+
 import org.teachingextensions.logo.PenColors;
 import org.teachingextensions.logo.Tortoise;
 
@@ -11,7 +10,6 @@ public class TortoiseColorChooser {
 
 	public static void main(String[] args) {
 		String color;
-		double negPi = -3.14;
 		
 		// 2. Set the pen width to 10
 		Tortoise.setPenWidth(10);
@@ -19,7 +17,7 @@ public class TortoiseColorChooser {
 		Tortoise.setSpeed(10);
 		int numLoops = new Random().nextInt(10);
 
-		System.out.println(numLoops + " " + negPi);
+		System.out.println(numLoops);
 		
 		for (int i = 0; i < numLoops + 1; i++) {
 			
