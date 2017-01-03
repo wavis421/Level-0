@@ -12,12 +12,10 @@ public class ObedientTortoise {
 	}
 
 	private static void drawSquare() {
-		Tortoise.penDown();
 		for (int i = 0; i < 4; i++) {
 			Tortoise.move(100);
 			Tortoise.turn(90);
 		}
-		Tortoise.penUp();
 	}
 	
 	private static void drawTriangle() {

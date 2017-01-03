@@ -12,7 +12,9 @@ public class FruitQuiz extends KeyAdapter {
 		question1 = new JLabel(
 				"<html>Which is not a real animal? <br> A: Flubber Monkey <br> B: Pink Fairy Armadillo <br> C: Dumbo Octopus</html>");
 		// 11. Make another question called "question2"
-		question2 = new JLabel("<html>What is your favorite color? <br> A: Red <br> B: Purple <br> C: Blue</html>");
+		question2 = new JLabel("<html>What is your favorite animal? <br> A: Dog <br> B: Cat <br> C: Monkey</html>");
+		question3 = new JLabel("<html>What is your favorite sport? <br> A: Football <br> B: Basketball <br> C: Hockey</html>");
+		question4 = new JLabel("<html>What is your favorite hobby? <br> A: Piano <br> B: Hiking <br> C: Sewing</html>");
 	}
 
 	@Override
@@ -43,6 +45,34 @@ public class FruitQuiz extends KeyAdapter {
 
 		// 12. If question2 is showing,
 		if (question2.isShowing()) {
+			// 3. If they touched the correct fruit
+			if (keyCode == banana) {
+				// 4. Call the correct() method
+				correct();
+				// 7. Use the nextQuestion() method to go to question2
+				nextQuestion(question3);
+			}
+			else
+			// 9. Call the incorrect() method
+				incorrect();
+
+		}
+		
+		if (question3.isShowing()) {
+			// 3. If they touched the correct fruit
+			if (keyCode == apple) {
+				// 4. Call the correct() method
+				correct();
+				// 7. Use the nextQuestion() method to go to question2
+				nextQuestion(question4);
+			}
+			else
+			// 9. Call the incorrect() method
+				incorrect();
+
+		}
+		
+		if (question4.isShowing()) {
 			// 3. If they touched the correct fruit
 			if (keyCode == banana) {
 				// 4. Call the correct() method

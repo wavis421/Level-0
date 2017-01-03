@@ -9,6 +9,7 @@ public class ChristmasTree {
 	
 	public static void main(String[] args) {
 		ChristmasTree ohChristmasTree = new ChristmasTree();
+		Tortoise.setSpeed(8);
 		ohChristmasTree.drawStar();
 		ohChristmasTree.drawTreeBody();
 		ohChristmasTree.drawTreeTrunk();
@@ -18,7 +19,6 @@ public class ChristmasTree {
 
 
 	void drawTreeBody() {
-		Tortoise.setSpeed(5);
 		// 8. Change the color of the line the tortoise draws to forest green	
 		Tortoise.setPenColor(Color.green.darker());
 		// 1. Make a variable for turnAmount and set it to 175
@@ -53,14 +53,14 @@ public class ChristmasTree {
 		// 4. Set the pen width to the tree width divided by 10
 		Tortoise.setPenWidth(treeWidth / 10);
 		// 5. Change the color of the line the tortoise draws to brown
-		Tortoise.setPenColor(Colors.Browns.Brown);
+		Tortoise.setPenColor(Color.orange.darker());
 		// 3. Move the tortoise a quarter the current length
 		Tortoise.move(treeWidth / 4);
 	}
 	
 	void drawStar() {
 		// Optional: get the Tortoise to draw a red star on top of the tree. Hint: 
-		Tortoise.setPenColor(Colors.Reds.Crimson);
+		Tortoise.setPenColor(Color.red.brighter());
 		for (int i = 0; i < 5; i++) {
 			Tortoise.move(treeWidth*2);
 			Tortoise.turn(144);
