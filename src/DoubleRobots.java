@@ -14,6 +14,8 @@ public class DoubleRobots {
 		sally.penDown();
 		robbie.setSpeed(7);
 		sally.setSpeed(7);
+		robbie.setPenColor(Color.blue);
+		sally.setPenColor(Color.magenta);
 
 		for (int loop = 0; loop < 30; loop++) {
 			robbie.setX(30);
